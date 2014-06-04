@@ -11,15 +11,19 @@ package fuentes.registro.model;
  * @author T107
  */
 public class Persona {
-    private Perro perro;
+  
 
-    public Perro getPerro() {
-        return perro;
+    private Mascota mascota;
+
+    public Mascota getMascota() {
+        return mascota;
     }
 
-    public void setPerro(Perro perro) {
-        this.perro = perro;
+    public void setMascota(Mascota mascota) {
+        this.mascota = mascota;
     }
+    
+   
 
    
     

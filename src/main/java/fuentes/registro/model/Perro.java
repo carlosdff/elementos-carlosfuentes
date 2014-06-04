@@ -1,9 +1,14 @@
 package fuentes.registro.model;
 
 
-public class Perro {
+public  class Perro implements Mascota{
     private String nombre;
 
+    @Override
+      public String obtenerRegistro(){
+        return "el perrito que registraste es:"+nombre;
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -12,10 +17,7 @@ public class Perro {
         this.nombre = nombre;
     }
     
-    public String obtenerRegistro(){
-        return "el perrito que registraste es:"+nombre;
-    }
-    
+  
     
     
 }

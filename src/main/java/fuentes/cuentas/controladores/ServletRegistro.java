@@ -6,6 +6,8 @@
 
 package fuentes.cuentas.controladores;
 
+import fuentes.registro.model.Gato;
+import fuentes.registro.model.Mascota;
 import fuentes.registro.model.Perro;
 import fuentes.registro.model.Persona;
 import java.io.IOException;
@@ -33,10 +35,11 @@ public class ServletRegistro extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Perro p=new Perro();
-        p.setNombre("spot");
+        
+   ServicioMascota m=new AervicioMascota();
+   
         Persona x=new Persona();
-        x.setPerro(p);
+        x.setMascota(mascota);
         
         request.setAttribute("registro",x);
         RequestDispatcher despachador=request.getRequestDispatcher("/registro.jsp");
